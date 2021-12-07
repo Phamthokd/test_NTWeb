@@ -1,0 +1,13 @@
+.back{
+    background-image: url(./img/cq5dam.thumbnail.767.431.margin.png);
+    
+}
+.navbar{
+    border-radius: 5px;
+}
+.row{
+    border-radius: 5px;
+}
+.content{
+    z-index: 100;
+}
