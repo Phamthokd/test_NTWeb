@@ -8,6 +8,6 @@
 .row{
     border-radius: 5px;
 }
-.content{
-    z-index: 100;
+.color:hover{
+    background-color: aqua !important;
 }

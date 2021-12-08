@@ -24,7 +24,7 @@
   </head>
   <body>
     <div class="container-fluid back bg-image">
-        <div class="container-fluid px-3 ">
+        <header class="container-fluid p-3 ">
             <div class="row p-3 bg-opacity-75 bg-white">
                 <div class="col-md-6 content">
                   <h2>Answer the following questions to determine if someone is an:</h2>
@@ -32,11 +32,10 @@
                   <ul class="navbar-nav px-1" >
                     <!-- Dropdown -->
                     <li class="nav-item dropdown">
-                      <select class="form-select form-select-lg mb-3 txt_animal" aria-label=".form-select-lg example">
-                        <option selected>only when they are delevering profound messages</option>
-                        <option value="1">Aliens</option>
-                        <option value="2">Bizarre</option>
-                        <option value="3">normal</option>
+                      <select class="form-select form-select-lg mb-3 txt_animal" id="select_animal" aria-label=".form-select-lg example">
+                        <option value="1">Only to do tricks</option>
+                        <option value="2">Of course, who doesn’t</option>
+                        <option value="3">Only to deliver profound messages</option>
                       </select>
                     </li>
                   </ul>
@@ -46,38 +45,37 @@
                       <!-- Dropdown -->
                       <li class="nav-item dropdown">
                         
-                        <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
-                            <option selected> no, why would i do that?</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
+                        <select class="form-select form-select-lg mb-3"  id="select_eat" aria-label=".form-select-lg example">
+                          <option value="1">Yes,i like it</option>
+                          <option value="2">No,i don't like</option>
+                          <option value="3">I only eat insect</option>
                           </select>
                       </li>
                     </ul>
                   </div>
                   <span>How do you feel about movie wall-e</span>
-                  <ul class="navbar-nav px-1" style="border: 1px solid #ccc">
+                  <ul class="navbar-nav px-1" >
                     <!-- Dropdown -->
                     <li class="nav-item dropdown">
                       
-                      <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
-                        <option selected>he's my brother</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
+                      <select class="form-select form-select-lg mb-3" id="select_feel" aria-label=".form-select-lg example">
+                        <option value="1">It is very good</option>
+                        <option value="2">I don't like</option>
+                        <option value="3">He is brother</option>
                       </select>
                     </li>
                   </ul>
-                  <button type="button" class="btn btn-primary btn_change">determine</button>
+                  <button type="button" class="btn btn-primary " id="btn_change">determine</button>
                 </div>
                 <div class="col-md-6">
                     <h2>result</h2>
-                    <h2 class="title"></h2>
-                    <img src="" alt="" class="img">
+                    <h2 id="text_result"></h2>
+                    <span id="text_description"></span>
+                    <br>
+                    <img src="" alt="" id="img" class="img-fluid w-25">
                 </div>
               </div>
-        </div>
-
+        </header>
     </div>
 
     <!-- MDB -->
